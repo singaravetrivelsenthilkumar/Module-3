@@ -1,30 +1,38 @@
 # Exp.No:3a
-## STRING - FIND AND REPLACE
+## STRING - FIND AND REMOVE
 
 ---
 
 ### AIM  
-To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
+
+To write a Python function to accept a string, identify a word to be replaced, and remove a word provided by the user.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Input the original string `str1` and the word to be replaced `replace_str`.  
-3. Ask the user to input the new replacement word `str2`.  
-4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
-5. Store the modified string in `str3`.  
-6. Display the original string (`str1`) and the modified string (`str3`).  
-7. Terminate the program.
+Extract the first three characters of the string using a[:3].
+
+Extract all characters from index 4 to the end using a[4:].
+
+Concatenate the two parts: a[:3] + a[4:].
+(This effectively skips the character at index 3.)
+
+Print the resulting string.
 
 ---
 
 ### PROGRAM
 
 ```
+def remove(a):
+    result=a[:3]+a[4:]
+    print(result)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/6acf24bb-bc44-455a-acf9-69c88755dc58)
+
 
 ### RESULT
+Thus the Python function to accept a string, identify a word to be replaced, and remove a word provided by the user is successfully verified.
